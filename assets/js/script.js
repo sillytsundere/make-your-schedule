@@ -8,6 +8,12 @@ $(function () {
   // function? How can DOM traversal be used to get the "hour-x" id of the
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
+  var saveBtn = document.querySelectorAll('.saveBtn');
+  var scheduleItem = document.querySelector('.description').innerHTML;
+  var timeBlock = document.querySelector('.time-block');
+  saveBtn.addEventListener('click', function() {
+    window.localStorage.getItem()
+  })
   //
   //
   // TODO: Add code to apply the past, present, or future class to each time
@@ -24,9 +30,7 @@ $(function () {
   //
   // DONE: Add code to display the current date in the header of the page.
   var theMonth = dayjs().format('dddd, MMM');
-  var theYear = dayjs().format('YYYY');
   var theDay = dayjs().format('DD');
-  console.log(theDay);
   var nth = function(d) {
     if (d > 3 && d < 21) return 'th';
     switch (d % 10) {
@@ -36,21 +40,5 @@ $(function () {
       default: return "th";
     }
   }
-  console.log(theDay);
-  $('#currentDay').text(theMonth + ' ' + theDay + nth(theDay) + ' ' + theYear);
+  $('#currentDay').text(theMonth + ' ' + theDay + nth(theDay));
 });
-
-//below function does that nth() does but with vanilla Js if else statement
-//var dateSuffix = function() {
-//  if (theDay === 1) {
-//    return theDay + 'st';
-//  }
-//  if (theDay === 2) {
-//    return theDay + 'nd';
-//  }
-//  if (theDay === 3) {
-//    return theDay + 'rd';
-//  } else {
-//    return theDay + 'th';
-//  }
-//}
