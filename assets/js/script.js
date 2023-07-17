@@ -6,21 +6,17 @@ var theMonth = dayjs().format('dddd, MMM');
 var theDay = dayjs().format('DD');
 var theYear = dayjs().format('YYYY');
 var currentHour = parseInt(dayjs().format('HH'));
+var hourArray = [];
 
 $(function () {
-  // DONE: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. HINT: What does `this` reference in the click listener
-  // function? How can DOM traversal be used to get the "hour-x" id of the
-  // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
+
   $('.saveBtn').on('click', function(event) {
-    event.preventDefault();
-    var item = $(event.target).parent('button').siblings('textArea').val();
-    localStorage.setItem('task', item);
-    console.log(localStorage.getItem('task'), 'the inner text of the task');
+    //event.preventDefault();
+    var item = $(this).siblings('textarea').val();
+    var time = $(this).parent().attr('id');
+    localStorage.setItem(time, item);
   })
-  //
+  
   $('.time-block').each(function() {
     var hourBlock = parseInt($(this).attr('id').split('-')[1]);
     if (hourBlock < currentHour) {
@@ -30,17 +26,28 @@ $(function () {
     } else {
       $(this).addClass('future');
     }});
-  //
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  // var savedItem = localStorage.getItem('task');
-  // $(event.target).parent('button').siblings('textArea').val() = savedItem;
-  var savedItem = localStorage.getItem('task');
-  $('.saveBtn').parent('button').siblings('.description').html(savedItem);
+/////
+/////
+/////
+  $('#hour-09 .description').val(localStorage.getItem('hour-09'));  
+  //select all time blocks for id's to use as keys
+  // var selTimeBlock = $('.time-block').attr('id');
+  // console.log(selTimeBlock);
 
+  $('.time-block').each(function() {
+    var hours = $(this).attr('id');
+    hourArray.push(hours);
+  })
+  console.log(hourArray);
 
+  for (var index = 0; index < hourArray.length; index++) {
+    $('.time-block').attr('id').hourArray
+    //$().val(localStorage.getItem(item));
+    console.log()
+  }
+/////
+/////
+/////
   function nth(d) {
     if (d > 3 && d < 21) return 'th';
     switch (d % 10) {
