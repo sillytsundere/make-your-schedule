@@ -19,8 +19,6 @@ $(function () {
     var item = $(event.target).parent('button').siblings('textArea').val();
     localStorage.setItem('task', item);
     console.log(localStorage.getItem('task'), 'the inner text of the task');
-    var savedItem = localStorage.getItem('task');
-    $(event.target).parent('button').siblings('.description').html(savedItem);
   })
   //
   $('.time-block').each(function() {
@@ -39,6 +37,8 @@ $(function () {
   // attribute of each time-block be used to do this?
   // var savedItem = localStorage.getItem('task');
   // $(event.target).parent('button').siblings('textArea').val() = savedItem;
+  var savedItem = localStorage.getItem('task');
+  $('.saveBtn').parent('button').siblings('.description').html(savedItem);
 
 
   function nth(d) {
