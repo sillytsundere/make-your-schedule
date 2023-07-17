@@ -5,8 +5,9 @@
 var theMonth = dayjs().format('dddd, MMM');
 var theDay = dayjs().format('DD');
 var theYear = dayjs().format('YYYY');
-var currentHour = 11//dayjs().format('HH');
+var currentHour = dayjs().format('HH');
 console.log(currentHour);
+console.log(typeof currentHour, "currentHour type");
 
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
@@ -27,22 +28,22 @@ $(function () {
   })
   //
   //
-  // TODO: Add code to apply the past, present, or future class to each time
+  // DONE: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
   $('.time-block').each(function() {
-    var hourBlock = $(this).attr('id').split('-')[1];
-    console.log(hourBlock);
+    var hourBlock = parseInt($(this).attr('id').split('-')[1]);
+    console.log(hourBlock, 'hour block');
+    console.log(typeof hourBlock, 'hourBlock type');
     if (hourBlock < currentHour) {
       $(this).addClass('past');
     } else if (hourBlock === currentHour) {
       $(this).addClass('present');
     } else {
       $(this).addClass('future');
-    }}
-  )
+    }});
   //
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
