@@ -2,41 +2,38 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This application serves as an hourly calendar for a typical work day (9am-5pm) and allows users to save events to each hour. A user can add a task to one of the hour blocks(or multiple), save it, and the task will persist when the page is refreshed. This application is largely powered by JQuery which actively reads and updates the HTML and CSS documents. The functionality of this webpage allows a user to plan and see what tasks they have planned for each hour of the day. The webpage makes reading the schedule and keeping track of time easy by utilizing Day.js to color code the hour blocks based off if the hour has passed, is the current hour or is in the future.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-This application serves as an hourly calenday for a typical work day (9am-5pm) and allows users to save events to each hour. A user can add a task to one of the hour blocks, save it and the task will persist when the page is refreshed. The user can also change or edit any of the tasks and after saving the change, the new entry will persist. This application is largely powered by JQuery which readily reads and updates the HTML and CSS documents.
-
-The user enters a task into the text area and then clicks the save button to the right of the text area to save the calendar entry. This event saves the task into local storage which enables the task to persist after the page is refreshed or reloaded. 
-
-The starter code uses the Day.jsLinks to an external site. library to work with date and time, but feel free to use a different JavaScript solution to handle this functionality.
+This web application was my introduction to using JQuery and all its eccentricities. While elbow deep in JQuery I feel that I have gained a deeper understanding and even appreciation for vanilla JavaScript and all that it has to offer. Day.js also proves to be a welcomed addition to my tools concerning time and dealing with any kind of time or timer in vanilla Javascript and JQuery alike. Surprisingly, this aplication also gave me new knowledge on strings and their utility. The way strings were utilized to display the date at the top of the page and to get an item from local storage and paste it in the correct element were ways I had not used strings before and proved to be very flexible.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To run the code, clone the project directories from [my repository](https://github.com/sillytsundere/make-your-schedule) and open the index.html, style.css and script.js files in preferred code editor. The HTML file can be viewed to examine the basic display elements and how they are organized on the webpage. Styling elements from bootstrap can also be seen in the  HTML file. The Javascript file can be viewed to inspect the complex interactivity of the webpage. The style.css file can be viewed to examine the styling of the webpage. The Javascript file utilizes classes from the CSS file as well as ID's in the HTML file to generate interactivity on the webpage.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The user enters a task into the text area and then clicks the save button to the right of the text area to save the calendar entry. This event saves the task into local storage which enables the task to persist after the page is refreshed or reloaded. The user can also change or edit any of the tasks and after saving the change, the new entry will persist.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Below is a screenshot of the webpage with pseudo entries to display its utility;
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![alt text](assets/images/screenshot.png)
 
 ## Credits
 
 Source code link: https://github.com/coding-boot-camp/crispy-octo-meme
 
-Libraries utilized to create this web application;
+Languages and libraries utilized to create this web application;
+
+![Static Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+![Static Badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+![Static Badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+![Static Badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
+![Static Badge](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
