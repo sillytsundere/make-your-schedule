@@ -18,6 +18,12 @@ Below is a screenshot of the webpage with pseudo entries to display its utility;
 
 ![alt text](assets/images/screenshot.png)
 
+## Support
+
+Reach out to me if you have any questions at:
+
+[My Github page](https://github.com/sillytsundere)
+
 ## Credits
 
 Source code link: https://github.com/coding-boot-camp/crispy-octo-meme
