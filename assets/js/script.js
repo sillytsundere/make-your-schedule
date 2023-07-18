@@ -7,7 +7,6 @@ var hourArray = [];
 $(function () {
 
   $('.saveBtn').on('click', function(event) {
-    //event.preventDefault();
     var item = $(this).siblings('textarea').val();
     var time = $(this).parent().attr('id');
     localStorage.setItem(time, item);
@@ -26,7 +25,7 @@ $(function () {
   $('.time-block').each(function() {
     var hours = $(this).attr('id');
     hourArray.push(hours);
-    $('#'+hourArray[hourArray.length-1]+' .description').val(localStorage.getItem(hourArray[hourArray.length-1]));
+    $('#' + hourArray[hourArray.length-1] + ' .description').val(localStorage.getItem(hourArray[hourArray.length-1]));
   })
 
   function nth(d) {

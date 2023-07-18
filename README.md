@@ -9,6 +9,12 @@ Provide a short description explaining the what, why, and how of your project. U
 - What problem does it solve?
 - What did you learn?
 
+This application serves as an hourly calenday for a typical work day (9am-5pm) and allows users to save events to each hour. A user can add a task to one of the hour blocks, save it and the task will persist when the page is refreshed. The user can also change or edit any of the tasks and after saving the change, the new entry will persist. This application is largely powered by JQuery which readily reads and updates the HTML and CSS documents.
+
+The user enters a task into the text area and then clicks the save button to the right of the text area to save the calendar entry. This event saves the task into local storage which enables the task to persist after the page is refreshed or reloaded. 
+
+The starter code uses the Day.jsLinks to an external site. library to work with date and time, but feel free to use a different JavaScript solution to handle this functionality.
+
 ## Installation
 
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
@@ -27,11 +33,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 Source code link: https://github.com/coding-boot-camp/crispy-octo-meme
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Libraries utilized to create this web application;
 
 ## License
 
