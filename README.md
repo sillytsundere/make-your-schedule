@@ -16,7 +16,9 @@ The user enters a task into the text area and then clicks the save button to the
 
 Below is a screenshot of the webpage with pseudo entries to display its utility;
 
-![web application taken at 11am with example schedule items](assets/images/schedule-web-app-screenshot.html.png)
+![web application viewed at 11am with example schedule items](assets/images/schedule-web-app-screenshot.html.png)
+
+The deployed site can be reached at this link: https://sillytsundere.github.io/make-your-schedule/
 
 ## Support
 
