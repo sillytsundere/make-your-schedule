@@ -2,7 +2,6 @@ var theMonth = dayjs().format('dddd, MMM');
 var theDay = dayjs().format('DD');
 var theYear = dayjs().format('YYYY');
 var currentHour = parseInt(dayjs().format('HH'));
-var hourArray = [];
 
 $(function () {
 
@@ -23,9 +22,10 @@ $(function () {
     }});
 
   $('.time-block').each(function() {
-    var hours = $(this).attr('id');
-    hourArray.push(hours);
-    $('#' + hourArray[hourArray.length-1] + ' .description').val(localStorage.getItem(hourArray[hourArray.length-1]));
+    for (var i = 9; i < 18; i++) {
+      var hour = "hour-" + i.toString().padStart(2, "0");
+      $('#' + hour + ' .description').val(localStorage.getItem(hour));
+    }
   })
 
   function nth(d) {

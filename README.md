@@ -12,7 +12,7 @@ To run the code, clone the project directories from [my repository](https://gith
 
 ## Usage
 
-The user enters a task into the text area and then clicks the save button to the right of the text area to save the calendar entry. This event saves the task into local storage which enables the task to persist after the page is refreshed or reloaded. The user can also change or edit any of the tasks and after saving the change, the new entry will persist.
+The user enters a task into the text area and then clicks the save button to the right of the text area to save the calendar entry. This event saves the task into local storage which enables the task to persist after the page is refreshed or reloaded. The user can also add new tasks and edit any of the saved tasks and after saving the change, the new entry will persist.
 
 Below is a screenshot of the webpage with pseudo entries to display its utility;
 
