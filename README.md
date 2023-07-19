@@ -16,7 +16,7 @@ The user enters a task into the text area and then clicks the save button to the
 
 Below is a screenshot of the webpage with pseudo entries to display its utility;
 
-![alt text](assets/images/screenshot.png)
+![web application taken at 11am with example schedule items](assets/images/schedule-web-app-screenshot.html.png)
 
 ## Support
 
